@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import { View, Text } from 'react-native'
+import React from 'react';
+import { View } from 'react-native'
 import Section1 from './Components/Section1'
 import Section2 from './Components/Section2'
 
@@ -31,7 +31,6 @@ export const store = createStore(
 );
 
 const App = (props) => {
-    const box1 = useRef();
     return <ProviderRedux store={store} >
         <View style={{
             width: "100%",
